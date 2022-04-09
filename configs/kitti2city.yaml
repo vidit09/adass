@@ -1,0 +1,36 @@
+USE_PL: False
+GN: True
+withda: True
+MODEL:
+  NUM_CLASSES: 2
+  PREDMAPSLOSS: True
+  META_ARCHITECTURE: 'SSDDetectorWithDALMultiFER'
+  BACKBONE:
+    NAME: 'vggselfattnfpntfp'
+    OUT_CHANNELS: (256, 256, 256, 256, 256, 256, 256)
+  PRIORS:
+    FEATURE_MAPS: [64, 32, 16, 8, 4, 2, 1]
+    STRIDES: [8, 16, 32, 64, 128, 256, 512]
+    MIN_SIZES: [35.84, 76.8, 153.6, 230.4, 307.2, 384.0, 460.8]
+    MAX_SIZES: [76.8, 153.6, 230.4, 307.2, 384.0, 460.8, 537.65]
+    ASPECT_RATIOS: [[2], [2, 3], [2, 3], [2, 3], [2, 3], [2], [2]]
+    BOXES_PER_LOCATION: [4, 6, 6, 6, 6, 4, 4]
+INPUT:
+  IMAGE_SIZE: 512
+DATASETS:
+  TRAIN: ("kitti_train", "cityscapes_train")
+  TEST: ("cityscapes_val", )
+SOLVER:
+  MAX_ITER: 120000
+  LR_STEPS: [10000, 20000, 100000]
+  GAMMA: 0.1
+  BATCH_SIZE: 4
+  WARMUP_ITERS: 500
+  LR: 1e-3
+  TYPE: "sgd_diff_lr"
+  LR_BLOCK: [1e-3,1e-3,1e-4]
+DA:
+  FIXED_CONST: [0,0.005]
+DATA_LOADER:
+  NUM_WORKERS: 16
+OUTPUT_DIR: 'outputs/kitti2city'
