@@ -5,7 +5,8 @@ for installing the requirements.
 
 ### Dataset
 For this work, we follow the same dataset setup as [EveryPixelMatters](https://github.com/chengchunhsu/EveryPixelMatters#dataset) 
-Modify the [path_catalogs](https://github.com/vidit09/adass/blob/master/ssd/config/path_catlog.py) file inorder to point to specific dataset location.
+
+Modify the [path_catalogs](https://github.com/vidit09/adass/blob/master/ssd/config/path_catlog.py) file in order to point to specific dataset location.
 
 ### Training
 We train on a single NVIDIA V100 GPU
