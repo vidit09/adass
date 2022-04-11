@@ -4,7 +4,8 @@ repositry is based on https://github.com/lufficc/SSD implementation of SSD. Plea
 for installing the requirements.
 
 ### Dataset
-For this work, we follow the same dataset setup as [Every Pixel Matters](https://github.com/chengchunhsu/EveryPixelMatters#dataset)
+For this work, we follow the same dataset setup as [EveryPixelMatters](https://github.com/chengchunhsu/EveryPixelMatters#dataset)
 
 ### Training
 `python train.py --config-file configs/<adaptation_task>.yaml`
+
