@@ -3,7 +3,7 @@ Pytorch implementation for Attention-based Domain Adaptation for Single Stage De
 
 ### Getting Started
 This repositry is based on https://github.com/lufficc/SSD implementation of SSD. Please follow this repo
-for installing the requirements. Our code was run with following versions
+for installing the requirements and train/test procedure. Our code was run with following versions
 
 1. Pytorch == 1.6
 
