@@ -21,6 +21,6 @@ We train on a single NVIDIA V100 GPU.
 
 ### Attention Module
 
-Our attention head [implementation](https://github.com/vidit09/adass/blob/master/ssd/modeling/backbone/vgg.py#L150) follows the [Detr's implementation](https://github.com/facebookresearch/detr) and used in the [domain classifier](https://github.com/vidit09/adass/blob/master/ssd/modeling/domain_classifier/domain_classifier.py#L62). The same is followed for YOLO implementation. 
+Our attention head [implementation](https://github.com/vidit09/adass/blob/master/ssd/modeling/backbone/vgg.py#L150) follows the [Detr's implementation](https://github.com/facebookresearch/detr) and used in the [domain classifier](https://github.com/vidit09/adass/blob/master/ssd/modeling/domain_classifier/domain_classifier.py#L62). The same arch design is followed in YOLO implementation. 
 
 
