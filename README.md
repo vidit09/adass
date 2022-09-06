@@ -1,5 +1,5 @@
 
-Pytorch implementation for Attention-based Domain Adaptation for Single Stage Detectors. 
+Pytorch implementation for [Attention-based Domain Adaptation for Single Stage Detectors.](https://link.springer.com/article/10.1007/s00138-022-01320-y)
 
 ### Getting Started
 This repositry is based on https://github.com/lufficc/SSD implementation of SSD. Please follow this repo
@@ -24,3 +24,16 @@ We train on a single NVIDIA V100 GPU.
 Our attention head [implementation](https://github.com/vidit09/adass/blob/master/ssd/modeling/backbone/vgg.py#L150) follows the [Detr's implementation](https://github.com/facebookresearch/detr) and used in the [domain classifier](https://github.com/vidit09/adass/blob/master/ssd/modeling/domain_classifier/domain_classifier.py#L62). The same arch design is followed in YOLO implementation. 
 
 
+### Citation
+```bibtex
+@article{vidit2022attention,
+  title={Attention-based domain adaptation for single-stage detectors},
+  author={Vidit, Vidit and Salzmann, Mathieu},
+  journal={Machine Vision and Applications},
+  volume={33},
+  number={5},
+  pages={1--14},
+  year={2022},
+  publisher={Springer}
+}
+```
